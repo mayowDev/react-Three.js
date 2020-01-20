@@ -1,0 +1,87 @@
+
+learn three.js :{
+https://itnext.io/how-to-use-plain-three-js-in-your-react-apps-417a79d926e0
+
+https://discoverthreejs.com/
+https://speckyboy.com/three-js-in-action/
+}
+jest and enzyme = https://www.youtube.com/watch?v=EgJZv9Iyj-E&list=PL-Db3tEF6pB8Am-IhCRgyGSxTalkDpUV_
+
+finish github on udemy
+finish sql 4 hr from freecodecamp and web simplified
+sequlize orm for nodejs 
+
+			How to use threejs in plain react
+			=================================
+https://itnext.io/how-to-use-plain-three-js-in-your-react-apps-417a79d926e0
+
+you can use React bindings for Three.js or plain threejs
+
+npm i three
+we make div element as container for the canvas or create the canvas <canvas> right there 
+
+threeEntryPoint is a function that takes a dom element as parameter, 
+this element will be the container of the canvas.
+The function threeEntryPoint is responsible for:
+Creating the canvas
+Binding events
+Creating Three.js objects
+Starting the render loop
+
+========= Getting started with  three js by traversy meadia ========= 
+
+any time we initialize new object we use 'new THREE.objectname'
+
+* Scene = allows to set up what and where is to be rendered by three.js. This is where we place objects, lights and cameras.
+*  Camera any animation we use , we place in camera
+there is differen types of camera ( PerspectiveCamera, OrthographicCamera, arrayCamera, StereoCamera)
+
+camera object takes 4 diffferent values or prameter
+
+1. vertical field of view or fov = 75 ,whic alwasy number stand for degre b/w 0 - 360 ),
+2. aspect ratio= , which is number and its always width of element / height of element 
+3. near plane , which is number minimum 1
+4. far plane. , which is number maximum 1000
+
+* renderer = there are different types of renders
+
+WebGL = is 2D ad 3D web Graphics libarary , is one of the popluar renders 
+
+set the size of renderer , in our case is the entire window and height 
+
+domElement = is property of webGl  renderer
+
+*there are different types of objects(geomatry box object is one example we use here)
+*geometry() takes 3 different number as prameter which stands for depth , width, height. in that order
+
+* materail is what we paint with the geomatry/or anyobject = it can be color , or texture 
+
+* mesh() = is the method that creates the cube . it takes the object/geometry and material
+
+* then we add cube that to the scene
+
+*the we create function animate which creates the animation , and it behaves as loop
+
+*the camer position is offset by default , b/c the coordinates basically put the camera and the cube
+inside each other , so we need to reposition the camera.position.z = 5 or 10 , whatever works .before
+you call the animate function
+
+
+WebGL && three.js (&& React) by Alec McEachran
+
+three js entities/properties
+
+render: is the thing that do the drawing 
+camera : is the prospective
+scene: is the universe
+mash :are objects
+material and geomatry: are the things that constittute objects
+geomatry are set of posotions, they are like triangles
+material are the way that triangles look when they rendered/displayed
+lights and shadow
+
+Hello world threejs::
+we using platonic solids
+transparent geomatry allows us to see shadows
+
+
